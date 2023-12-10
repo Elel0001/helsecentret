@@ -1,0 +1,51 @@
+/********** Kategori og filter **********/
+.filter {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: #594838;
+}
+a {
+  color: #594838;
+  text-decoration: none;
+}
+a:hover {
+  color: #809671;
+}
+li:hover {
+  border-color: #809671;
+}
+li {
+  list-style: none;
+  padding-top: 10px;
+  border-bottom-style: solid;
+  border-color: #594838;
+  border-bottom-width: 1px;
+  width: 70px;
+}
+
+/******* Produkter *******/
+img {
+  width: 50%;
+}
+.border {
+  border: 1px solid #594838;
+  text-align: center;
+  place-content: center;
+}
+.grid_galleri {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #162a2c;
+}
+@media (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 5px;
+  }
+  .grid_galleri {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
