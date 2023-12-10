@@ -11,7 +11,84 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">FORSIDE</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="om.html">OM OS</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
 
+        </nav>
+        <div class="logo">
+            <a href="/">
+                <!-- replace logo -->
+                <img src="logo_tree_test.svg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <div class="menu_log_ind">
+                <div class="underline">
+                    <span><img src="iconer/search_icon.svg" alt="search" class="search_menu"></span>
+                    <span class="search_text">
+                        Søg efter produkt, mærk
+                    </span>
+                </div>
+                <img src="iconer/person_icon.svg" alt="person" class="iconer_menu">
+                <img src="iconer/shopping_bag_icon.svg" alt="shopping_test" class="iconer_menu">
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="grid_1_1">
+            <div class="højre_side">
+                <h1>Kontakt</h1>
+                <p>Har du brug for at komme i kontakt med os, kan du gøre det ved hjælp af nedenstående oplysninger. Du
+                    er
+                    også
+                    altid
+                    velkommen til at komme forbi butikken.</p>
+                <!-- HUSK netlify og name, hvis det skal bruges-->
+                <form>
+                    <div class="kontakt_form">
+                        <div>
+                            <div>
+                                <label for="navn">Navn</label>
+                            </div>
+                            <input id="navn" type="text">
+                        </div>
+                        <div>
+                            <div>
+                                <label for="email">Email</label>
+                            </div>
+                            <input id="email" type="email">
+                        </div>
+                        <div>
+                            <div>
+                                <label for="besked">Besked</label>
+                            </div>
+                            <textarea id="besked" placeholder="Skriv din besked her..." rows="5"></textarea>
+                            <div>
+                                <button type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="venstre_side">
+                <img src="img/map.svg" alt="kort over butikkens placering">
+                <h2>Åbningstider</h2>
+                <p>Mandag - fredag (10:00 - 18:00)</p>
+                <p>Lørdag (10:00 - 15:00)</p>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
