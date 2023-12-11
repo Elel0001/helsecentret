@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0; 
   height: auto;
-  background-color: antiquewhite;
+  background-color: rgba(243, 235, 224, 1);
 }
 
 /****************** menu eksempel fra undervisning + ændringer *******************/
@@ -14,7 +14,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  background-color: rgba(243, 235, 224, 1);
   position: relative;
 }
 
@@ -173,7 +172,7 @@ cursor: pointer;
 /****************** menu end *******************/
 
 .hero_image {
-    /* position: absolute; */
+  position: relative;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -181,25 +180,23 @@ cursor: pointer;
 
 .hero_content {
     position: absolute;
-    top: 40%;
-    left: 60%;
-    transform: translate(-10%, -50%);
-    color: #809671; /* Text color */
-    text-align: center;
+    top: 30%;
+    left: 50%;
+    color: #809671; 
+    /* text-align: center; */
 }
 
 h1 {
 
     margin: 0;
     font-size: 3cqw;
+    font-weight: 100;
 }
 
-.button_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transform: translate(0, 70%);
+.button_hero {
+    position: absolute;
+    top: 60%;
+    left: 50%;
 }
 
 .button_center {
@@ -253,9 +250,9 @@ h1 {
 
 .hor_line {
     border: none;
-    height: 1px; /* Adjust the thickness of the line */
-    background-color: rgba(90, 73, 56, 1); /* Adjust the color of the line */
-    margin: 5% 0; /* Adjust the margin to control spacing */
+    height: 1px; 
+    background-color: rgba(90, 73, 56, 1);
+    margin: 5% 0; 
 }
 
 .nyheder_text {
@@ -264,7 +261,11 @@ h1 {
 
 /********************************************* karousel ****************************************************/
 
-
+.produkter {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 .carousel-container {
     display: flex;
     flex-direction: row; 
