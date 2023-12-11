@@ -22,6 +22,10 @@ img {
   padding: 0 10px;
 }
 
+.overskrift {
+  padding-bottom: 10px;
+}
+
 .tekst {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -42,7 +46,7 @@ img {
 
   .tekst {
     max-width: 65ch;
-    padding-top: 190px;
+    padding-top: 130px;
   }
 
   .p_tekst {
