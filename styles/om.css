@@ -24,6 +24,7 @@ img {
 
 .overskrift {
   padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .tekst {
@@ -32,6 +33,7 @@ img {
 
 .p_tekst {
   padding-bottom: 15px;
+  padding-left: 10px;
 }
 
 .horisontal_linje {
@@ -40,9 +42,13 @@ img {
   border-bottom-width: 1px;
 }
 
+.citat {
+  padding: 20px 10px;
+}
+
 @media (min-width: 800px) {
   section {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 
   /* om butikken */
@@ -94,5 +100,10 @@ img {
   .billede5 {
     grid-column: 2 / span 2;
     grid-row: 3 / span 2;
+  }
+
+  .citat {
+    padding: 50px 550px;
+    text-align: center;
   }
 }
