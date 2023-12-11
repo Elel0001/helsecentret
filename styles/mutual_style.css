@@ -33,6 +33,17 @@ h4 {
   color: #809671;
 }
 
+h5 {
+  font-family: "Source Sans 3", "Calibri";
+  font-size: 1.3rem;
+  color: #594838;
+}
+h6 {
+  font-family: "Source Sans 3", "Calibri";
+  font-size: 1.2rem;
+  color: #809671;
+}
+
 p {
   font-family: "Source Sans 3", "Calibri";
   font-size: 1.1rem;
