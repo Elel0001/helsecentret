@@ -22,6 +22,7 @@ a:hover {
   width: 7%;
 }
 
+/* Kategorier i mobil version */
 @media (max-width: 700px) {
   ul {
     display: grid;
