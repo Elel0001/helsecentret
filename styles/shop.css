@@ -1,14 +1,3 @@
-h5 {
-  font-family: "Source Sans 3", "Calibri";
-  font-size: 1.3rem;
-  color: #594838;
-}
-h6 {
-  font-family: "Source Sans 3", "Calibri";
-  font-size: 1.2rem;
-  color: #809671;
-}
-
 /********** Kategori og filter **********/
 a {
   color: #594838;
@@ -25,6 +14,9 @@ a:hover {
 }
 .filter:hover {
   border-color: #809671;
+}
+.pil {
+  width: 7%;
 }
 
 /******* Produkter *******/
