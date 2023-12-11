@@ -154,7 +154,7 @@ img {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    padding: 60px 300px;
+    padding: 60px 350px;
   }
 
   .footer_linje2 {
@@ -162,7 +162,20 @@ img {
     justify-content: center;
     justify-content: space-between;
     padding: 0px 600px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+  }
+
+  .footer_linje3 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 600px;
+    padding-bottom: 20px;
+  }
+
+  .betalingsikoner {
+    width: 35px;
+    height: 35px;
   }
 
   footer {
