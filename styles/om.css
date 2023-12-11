@@ -58,7 +58,7 @@ img {
   justify-content: center;
   gap: 10px;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .ikoner {
   width: 40px;
@@ -154,6 +154,18 @@ img {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    padding: 30px 300px;
+    padding: 60px 300px;
+  }
+
+  .footer_linje2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 600px;
+    padding-bottom: 40px;
+  }
+
+  footer {
+    background-color: #d2d0b7;
   }
 }
