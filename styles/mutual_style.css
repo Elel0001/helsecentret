@@ -18,6 +18,15 @@ h3 {
   color: #809671;
 }
 
+h4 {
+  /* Citat tekster */
+  font-family: "Lora", "Calibri";
+  font-style: oblique;
+  font-weight: 200;
+  font-size: 1.3rem;
+  color: #809671;
+}
+
 p {
   font-family: "Source Sans 3", "Calibri";
   font-size: 1.1rem;
