@@ -1,4 +1,16 @@
 h1 {
+  /* Tekst på heroimage */
+}
+
+h2 {
+  /* Brun overskrift */
+  font-family: "Lora", "Calibri";
+  font-size: 2rem;
+  color: #594838;
+}
+
+h3 {
+  /* Grøn overskrift */
   font-family: "Lora", "Calibri";
   font-size: 2rem;
   color: #809671;
