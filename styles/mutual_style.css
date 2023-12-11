@@ -43,6 +43,8 @@ body {
   background-color: #f3ebe0;
 }
 
+/* ikoner: uden for @media = 40 x 40px, inde i @media = 50 x 50px + gap: 10px*/
+
 /****************** menu eksempel fra undervisning + ændringer *******************/
 
 header {
