@@ -154,8 +154,24 @@ img {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    padding: 60px 350px;
+    padding: 70px 350px;
   }
+
+  /* pil foran tekst er indsat ved hjælp af chatGPT */
+  .pil_container {
+    display: flex;
+    align-items: center;
+  }
+
+  .arrow {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #594838;
+    vertical-align: middle;
+    line-height: 1;
+  }
+
+  /* ----------- */
 
   .footer_linje2 {
     display: flex;
@@ -163,6 +179,12 @@ img {
     justify-content: space-between;
     padding: 0px 600px;
     padding-bottom: 20px;
+  }
+
+  /* Vertical line lavet ved hjælp af ChaptGPT */
+  .vertical_line {
+    border-left: 2px solid #809671;
+    height: 30px;
   }
 
   .footer_linje3 {
