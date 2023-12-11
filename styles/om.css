@@ -58,7 +58,7 @@ img {
   justify-content: center;
   gap: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .ikoner {
   width: 40px;
@@ -147,5 +147,13 @@ img {
   .ikoner {
     width: 50px;
     height: 50px;
+  }
+
+  /* Footer */
+  .footer_menu {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 30px 300px;
   }
 }
