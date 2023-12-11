@@ -1,15 +1,38 @@
-/********grid og positioner i grid*******/
+body {
+  background-color: #f3ebe0;
+}
+
+/********grid og positioner i grid (margin osv)*******/
 #grid_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 2.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  gap: 2rem;
 }
 #grid_1_1 img {
   width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
+}
+.tider {
+  margin-left: 3rem;
+}
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+}
+.forms_linje {
+  margin-top: 1rem;
 }
 /******** end grid og positioner i grid*******/
+
+/******** Fonte og tekster *******/
 h4 {
   font-family: "Lora", "Calibri";
   font-size: 1.5rem;
@@ -20,11 +43,58 @@ h3 {
   font-weight: 100;
 }
 label {
-  font-family: sans-serif;
+  font-family: "Source Sans 3", "Calibri";
   font-size: 1.1rem;
   color: #809671;
-  font-weight: 100;
+  font-weight: 800;
+  padding-left: 0.6rem;
 }
 h2 {
   font-family: "Lora", serif;
 }
+.kontakt_info {
+  font-family: "Source Sans 3", "Calibri";
+  font-size: 1.1rem;
+  color: #809671;
+  font-weight: 100;
+}
+textarea {
+  font-family: "Source Sans 3", "Calibri";
+  font-size: 1rem;
+  color: #809671;
+  font-weight: 100;
+}
+/******** End fonte og tekster *******/
+
+/******** Kontaktformular *******/
+input {
+  background-color: #f3ebe0;
+  width: 100%;
+  border-color: #594838;
+  border-radius: 15px;
+  padding-bottom: 2rem;
+  border-width: 1px;
+}
+textarea {
+  background-color: #f3ebe0;
+  width: 97.7%;
+  resize: none;
+  border-color: #594838;
+  border-radius: 15px;
+  border-width: 1px;
+  padding: 0.5rem;
+}
+button {
+  padding: 10px 60px;
+  border: 3.5px solid #809671;
+  border-radius: 60px;
+  background-color: transparent;
+  color: #809671;
+  text-decoration: none;
+}
+button :hover {
+  color: #594838;
+  background-color: transparent;
+  border: 3.5px solid #594838;
+}
+/******** End Kontaktformular *******/
