@@ -1,159 +1,3 @@
-/****************** menu eksempel fra undervisning + ændringer *******************/
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-  background-color: rgba(243, 235, 224, 1);
-  position: relative;
-}
-
-.logo img {
-  width: 60px;
-  height: 60px;
-}
-
-.search_menu {
-  width: 20px;
-  height: auto;
-}
-
-.search_text {
-  color: rgba(89, 72, 56, 0.7);
-}
-
-.iconer_menu {
-  width: 30px;
-  height: auto;
-  margin-left: 20px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0 0 0 30px;
-}
-
-.menu_log_ind {
-  display: flex;
-  list-style: none;
-  margin-right: 80px;
-  padding: 0;
-}
-
-.underline {
-  position: relative;
-  display: inline-block;
-  margin-right: 80px;
-}
-
-.underline::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(89, 72, 56, 1);
-}
-
-.menu li {
-  margin-right: 20px;
-}
-
-.menu li:last-child {
-  margin-right: 0;
-}
-
-.menu a {
-  display: block;
-  padding: 10px;
-  color: rgba(89, 72, 56, 1);
-  /* font-family: lora; */
-  text-decoration: none;
-  transition: color 0.3s;
-  text-align: end;
-  font-size: 1cqw;
-}
-
-.menu a:hover {
-  color: rgba(128, 150, 113, 1);
-}
-
-.iconer_menu:hover {
-  color: rgba(128, 150, 113, 1);
-  cursor: pointer;
-}
-
-.burger {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.burger .line {
-  width: 100%;
-  height: 2px;
-  background-color: rgba(128, 150, 113, 1);
-  margin-bottom: 5px;
-  transition: 0.2s linear;
-}
-.burger {
-  display: none;
-}
-@media screen and (max-width: 800px) {
-  .menu_log_ind {
-    display: none;
-  }
-
-  .menu {
-    display: none;
-  }
-  .burger {
-    display: block;
-  }
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
-  }
-
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
-  }
-
-  nav.active .menu {
-    display: block;
-    background-color: rgba(243, 235, 224, 1);
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-
-  nav.active .menu li {
-    margin: 10px 20px;
-  }
-
-  nav.active .menu a {
-    font-size: 20px;
-  }
-}
-/****************** menu end *******************/
-
 /********grid og positioner i grid*******/
 #grid_1_1 {
   display: grid;
@@ -165,4 +9,22 @@ nav {
   margin-left: auto;
   margin-right: auto;
 }
-/********grid og positioner i grid*******/
+/******** end grid og positioner i grid*******/
+h4 {
+  font-family: "Lora", "Calibri";
+  font-size: 1.5rem;
+  color: #809671;
+  font-weight: 100;
+}
+h3 {
+  font-weight: 100;
+}
+label {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  color: #809671;
+  font-weight: 100;
+}
+h2 {
+  font-family: "Lora", serif;
+}
