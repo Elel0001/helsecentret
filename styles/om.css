@@ -26,33 +26,42 @@ img {
   padding-bottom: 10px;
 }
 
-/* .tekst {
+.tekst {
   padding-top: 20px;
-  padding-bottom: 20px;
-} */
+}
 
-/* .p_tekst {
-  padding: 10px;
-} */
+.p_tekst {
+  padding-bottom: 15px;
+}
+
+.horisontal_linje {
+  border-bottom-style: solid;
+  border-color: #594838;
+  border-bottom-width: 1px;
+}
 
 @media (min-width: 800px) {
+  section {
+    padding-top: 50px;
+  }
+
   /* om butikken */
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    width: 800px;
+    gap: 50px;
+    width: 1200px;
     margin: 0 auto;
-    /* padding: 0px 250px; */
   }
 
   .tekst {
     max-width: 65ch;
-    /* padding-top: 130px; */
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 
   .p_tekst {
-    /* padding-left: 50px; */
+    padding-bottom: 15px;
   }
 
   .galleri_grid {
