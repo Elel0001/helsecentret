@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   /* Tekst på heroimage */
   font-family: "Lora", "Calibri";
@@ -18,11 +24,26 @@ h3 {
   color: #809671;
 }
 
+h4 {
+  /* Citat tekster */
+  font-family: "Lora", "Calibri";
+  font-style: oblique;
+  font-weight: 200;
+  font-size: 1.3rem;
+  color: #809671;
+}
+
 p {
   font-family: "Source Sans 3", "Calibri";
   font-size: 1.1rem;
   color: #594838;
 }
+
+body {
+  background-color: #f3ebe0;
+}
+
+/* ikoner: uden for @media = 40 x 40px, inde i @media = 50 x 50px + gap: 10px*/
 
 /****************** menu eksempel fra undervisning + ændringer *******************/
 

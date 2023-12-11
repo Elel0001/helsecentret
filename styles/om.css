@@ -1,13 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #f3ebe0;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -24,35 +14,81 @@ img {
 
 .overskrift {
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-/* .tekst {
+.tekst {
   padding-top: 20px;
-  padding-bottom: 20px;
-} */
+  padding-right: 10px;
+}
 
-/* .p_tekst {
-  padding: 10px;
-} */
+.p_tekst {
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.horisontal_linje {
+  border-bottom-style: solid;
+  border-color: #594838;
+  border-bottom-width: 1px;
+}
+
+.citat {
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.grid_1-1_sheilla {
+  padding: 0px 10px;
+}
+
+/* video */
+
+.video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+/* ikoner */
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ikoner {
+  width: 40px;
+  height: 40px;
+}
+
+/* -----------------------------FULD SKÆRM---------------------- */
 
 @media (min-width: 800px) {
+  section {
+    padding-top: 60px;
+  }
+
   /* om butikken */
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    width: 800px;
+    gap: 50px;
+    width: 1200px;
     margin: 0 auto;
-    /* padding: 0px 250px; */
   }
 
   .tekst {
     max-width: 65ch;
-    /* padding-top: 130px; */
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 
   .p_tekst {
-    /* padding-left: 50px; */
+    padding-bottom: 15px;
   }
 
   .galleri_grid {
@@ -85,5 +121,31 @@ img {
   .billede5 {
     grid-column: 2 / span 2;
     grid-row: 3 / span 2;
+  }
+
+  .citat {
+    padding: 50px 550px;
+    text-align: center;
+  }
+
+  /* om Sheilla */
+  .grid_1-1_sheilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  /* ikoner */
+  .flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .ikoner {
+    width: 50px;
+    height: 50px;
   }
 }
