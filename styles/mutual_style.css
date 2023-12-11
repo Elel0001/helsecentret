@@ -1,3 +1,11 @@
 h1 {
-  font-family: "Lora", serif;
+  font-family: "Lora", "Calibri";
+  font-size: 2rem;
+  color: #809671;
+}
+
+p {
+  font-family: "Source Sans 3", "Calibri";
+  font-size: 1.1rem;
+  color: #594838;
 }
