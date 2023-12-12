@@ -62,7 +62,7 @@ img {
   color: #162a2c;
 }
 @media (min-width: 800px) {
-  .grid_1-1 {
+  .grid_1-4 {
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 5px;
@@ -71,4 +71,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
