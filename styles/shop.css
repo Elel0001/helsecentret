@@ -1,49 +1,38 @@
-body {
-}
-/********** Kategori og filter **********/
-a {
+/******* Accordion *****/
+.accordion {
   color: #594838;
-  text-decoration: underline;
-}
-a:hover {
-  color: #809671;
-}
-.filter_1,
-.filter_2,
-.filter_3 {
-  list-style: none;
-  padding-top: 10px;
   font-family: "Lora", "Calibri";
   font-size: 1.5rem;
-  padding-left: 51px;
+  padding-left: 2%;
+  padding-bottom: 5%;
 }
-.filter:hover {
-  border-color: #809671;
+
+.accordion-item:hover {
+  color: #809671;
+  font-family: "Lora", "Calibri";
+  font-size: 1.5rem;
 }
-.pil {
-  width: 7%;
+
+.accordion-header {
+  padding-top: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.accordion-content {
+  font-family: "Lora", "Calibri";
+  font-size: 1rem;
+  display: none;
+  padding: 10px;
+}
+li {
+  list-style-type: none;
 }
 
 /* Kategorier i mobil version */
-@media (max-width: 700px) {
-  ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .filter_1 {
-    grid-column: 1;
-    font-size: 0.8rem;
-    padding-bottom: 10px;
-  }
-  .filter_2 {
-    grid-column: 2;
-    font-size: 0.8rem;
-    padding-bottom: 10px;
-  }
-  .filter_3 {
-    grid-column: 3;
-    font-size: 0.8rem;
-    padding-bottom: 10px;
+@media (min-width: 800px) {
+  .accordion {
+    padding-left: 51px;
   }
 }
 
@@ -58,10 +47,14 @@ img {
   margin-left: -1px;
   margin-top: -1px;
 }
-.grid_galleri {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-right: 0.8%;
+
+@media (max-width: 700px) {
+  .grid_galleri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 0.8%;
+    margin-left: 0.8%;
+  }
 }
 @media (min-width: 800px) {
   .grid_1-4 {

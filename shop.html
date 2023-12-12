@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="underside_header">
+        <nav class="underside_nav">
             <ul class="menu">
                 <li><a href="index.html">FORSIDE</a></li>
                 <li><a href="shop.html">SHOP</a></li>
@@ -48,19 +48,45 @@
         </nav>
     </header>
     <main>
+
         <div class="grid_1-4">
-            <div>
-                <ul>
-                    <li class="filter_1"><a href="index.html">Kategorier <img src="img/pil_ned.png" alt="pil ned"
-                                class="pil"></a></li>
-                    <li class="filter_2"><a href="index.html">Mærker <img src="img/pil_ned.png" alt="pil ned"
-                                class="pil"></a>
-                    </li>
-                    <li class="filter_3"><a href="index.html">Priser <img src="img/pil_ned.png" alt="pil ned"
-                                class="pil"></a>
-                    </li>
-                </ul>
+            <div class="accordion">
+                <div class="grid_1-1-1">
+                    <div class="accordion-item1">
+                        <div class="accordion-header">Kategorier</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Vitaminer</li>
+                                <li>Mineraler</li>
+                                <li>Naturlægemidler</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item2">
+                        <div class="accordion-header">Mærker</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Biosym</li>
+                                <li>Biogan</li>
+                                <li>Økologisk</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item3">
+                        <div class="accordion-header">Priser</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>0,00 kr. - 99,00 kr.</li>
+                                <li>100,00 kr. - 199,00 kr.</li>
+                                <li>200,00 kr. - 299,00 kr.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="grid_galleri">
                 <div class="border">
                     <img src="img/product_1.webp" alt="product 1">
@@ -129,6 +155,8 @@
             <h5>Side 1</h5>
             <img src="iconer/pil_højre.png" alt="pil mod venstre" class="skift">
         </div>
+
+
         <div class="footer_linje"></div>
     </main>
     <footer>
@@ -163,6 +191,7 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="accordion.js"></script>
 </body>
 
 </html>
