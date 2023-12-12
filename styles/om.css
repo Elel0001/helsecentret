@@ -1,7 +1,7 @@
 img {
   width: 100%;
   height: auto;
-  display: block;
+  /* display: block; */
   /* object-fit: cover;
   align-self: stretch; */
 }
@@ -29,11 +29,11 @@ img {
   padding-right: 10px;
 }
 
-.horisontal_linje {
+/* .horisontal_linje {
   border-bottom-style: solid;
   border-color: #594838;
   border-bottom-width: 1px;
-}
+} */
 
 .citat {
   padding: 20px 30px;
