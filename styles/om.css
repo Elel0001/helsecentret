@@ -54,6 +54,10 @@ img {
   aspect-ratio: 1920/750;
 }
 
+.om_sheilla {
+  padding: 4% 0%;
+}
+
 /* ikoner */
 .flex {
   display: flex;
