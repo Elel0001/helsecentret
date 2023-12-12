@@ -1,7 +1,7 @@
 // ************************ menu eksempel fra undervisning  *********************
 
 const burger = document.querySelector(".burger");
-const nav = document.querySelector("nav");
+const nav = document.querySelector(".underside_nav");
 const menu = document.querySelector(".menu");
 const links = document.querySelectorAll(".menu li a");
 
@@ -58,7 +58,6 @@ showSlides();
 
 //******************* */ carousel med hjælp af ChatGPT
 
-<<<<<<< HEAD
 const carouselMobil = document.querySelector(".carousel_mobil");
 const slidesMobil = document.querySelectorAll(".carousel-slide_mobil");
 const prevArrowMobil = document.querySelector(".prev-arrow_mobil");
@@ -91,41 +90,5 @@ prevArrowMobil.addEventListener("click", prevSlide);
 
 // Show the initial slides
 showSlides();
-=======
-// const carouselMobil = document.querySelector('.carousel_mobil');
-// const slidesMobil = document.querySelectorAll('.carousel-slide_mobil');
-// const prevArrowMobil = document.querySelector('.prev-arrow_mobil');
-// const nextArrowMobil = document.querySelector('.next-arrow_mobil');
-// let currentIndexM = 0;
-
-// function showSlidesMobil() {
-//     slidesMobil.forEach((slide, i) => {
-//         const isVisible = i >= currentIndexM && i < currentIndexM + 2; // Show four slides at a time and hide the rest
-//         slide.style.display = isVisible ? 'block' : 'none';
-//     });
-// }
-
-// function nextSlide() {
-//     currentIndexM += 2; // Increment by 4 to show four slides
-//     if( currentIndexM >= slidesMobil.length)
-//       currentIndexM = 0;
-//     console.log("Cur. indexM: " + currentIndexM + " Last indexM: " + (slidesMobil.length-1));      
-//     showSlidesMobil();
-// }
-
-// function prevSlide() {
-//     currentIndexM -= 2; // Decrement by 4 to show four slides
-//     if( currentIndexM < 0)
-//       currentIndexM = Math.floor((slidesMobil.length-1) / 2) * 2; // show last page
-//     console.log("Cur. indexM: " + currentIndexM + " Last indexM: " + (slides.length-1));      
-//     showSlidesMobil();
-// }
-
-// nextArrowMobil.addEventListener('click', nextSlide);
-// prevArrowMobil.addEventListener('click', prevSlide);
-
-// // Show the initial slides
-// showSlides();
->>>>>>> 873510caccfb7c3c836d6da1b0e3dbb45052b76a
 
 //****************************** */ carousel end

@@ -168,7 +168,7 @@ nav {
 }
 
 main {
-  margin-top: -110px;
+  margin-top: -135px;
 }
 /****************** menu end *******************/
 
@@ -348,6 +348,7 @@ font-size: 25px;
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-bottom: 40px;
 }
 
 
@@ -366,25 +367,25 @@ margin-top: 10%;
 }
 
 .three_test {
-  display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: center; 
   gap: 2%;
   margin-top: 1%;
 }
 
 .text_iconer {
   max-width: 32ch;
+
 }
     
 @media screen and (min-width: 800px)  {
 
-.three_icons {
+.three_test {
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 20%;
-    padding-top: 3%;
+    gap: 10%;
+    padding-top: 0.3%;
 }
 
 .three_icons_text {
@@ -485,6 +486,10 @@ margin-top: 10%;
 
 .next-arrow_mobil {
 font-size: 25px;
+}
+
+.text_iconer {
+text-align: center;
 }
 
 }
