@@ -1,8 +1,6 @@
-
-
 body {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   height: auto;
   background-color: rgba(243, 235, 224, 1);
 }
@@ -119,7 +117,6 @@ nav {
   transition: 0.2s linear;
 }
 
-
 @media screen and (max-width: 800px) {
   #menu_log_ind_forside {
     display: none;
@@ -171,20 +168,18 @@ main {
 }
 /****************** menu end *******************/
 
-
 .grid_hero {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 .hero_image {
   /* position: relative; */
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    grid-column: 1/3;
-    grid-row: 1/4;
-
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  grid-column: 1/3;
+  grid-row: 1/4;
 }
 
 .content_button {
@@ -193,18 +188,16 @@ main {
 }
 
 .hero_content {
-   /*  position: absolute;
+  /*  position: absolute;
     top: 30%;
     left: 50%; */
-    color: #809671; 
-    /* text-align: center; */
-    margin-bottom: 10px;
-   
+  color: #809671;
+  /* text-align: center; */
+  margin-bottom: 10px;
 }
 
 h1 {
-
-    font-size: 3cqw;
+  font-size: 3cqw;
 }
 
 .button_center {
@@ -221,14 +214,13 @@ h1 {
   border: 3.5px solid #594838;
 }
 
-
 /********************************** three icons *********************/
 .three_icons {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 17%;
-    padding-top: 3%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 17%;
+  padding-top: 3%;
 }
 
 .icon_size {
@@ -237,19 +229,18 @@ h1 {
 }
 
 .three_icons_text {
-    display: flex;
-    justify-content: center;
-    padding: 4%;
+  display: flex;
+  justify-content: center;
+  padding: 4%;
 }
-
 
 /********************************** three icons end *********************/
 
 .hor_line {
-    border: none;
-    height: 1px; 
-    background-color: rgba(90, 73, 56, 1);
-    margin: 5% 0; 
+  border: none;
+  height: 1px;
+  background-color: rgba(90, 73, 56, 1);
+  margin: 5% 0;
 }
 
 .nyheder_text {
@@ -260,7 +251,6 @@ h1 {
   width: 40px;
   height: 40px;
 }
-
 
 .button_center {
   padding: 3px 20px;
@@ -296,23 +286,23 @@ h6 {
 }
 
 .carousel-container {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    text-align: center;
-    margin: 5% 0 2% 5%;
-    padding-left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin: 5% 0 2% 5%;
+  padding-left: 5%;
 }
 
 .carousel {
-    display: flex;
-    overflow: hidden;
-    flex: 1;
-    gap: 10px;
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+  gap: 10px;
 }
 
 .carousel-slide {
-    flex: 0 0 20%; 
+  flex: 0 0 20%;
 }
 
 .nav-arrows {
@@ -323,7 +313,7 @@ h6 {
 }
 
 .next-arrow {
-font-size: 25px;
+  font-size: 25px;
 }
 
 /********************************************* karousel end ****************************************************/
@@ -337,10 +327,10 @@ font-size: 25px;
   padding: 0 10% 5% 10%;
 }
 
- .video {
+.video {
   width: 100%;
   height: auto;
-  aspect-ratio: 16/9;
+  aspect-ratio: 1920/750;
 }
 
 .flex_facebook_insta {
@@ -350,10 +340,8 @@ font-size: 25px;
   padding-bottom: 40px;
 }
 
-
 .om_helse_centret {
   padding: 0 10% 10% 10%;
-
 }
 
 .om_helse_tekst {
@@ -361,134 +349,128 @@ font-size: 25px;
 }
 
 .button_laes_mere {
-text-align: center;
-margin-top: 10%;
+  text-align: center;
+  margin-top: 10%;
 }
 
 .three_test {
   text-align: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 2%;
   margin-top: 1%;
 }
 
 .text_iconer {
   max-width: 32ch;
-
 }
-    
-@media screen and (min-width: 800px)  {
 
-.three_test {
+@media screen and (min-width: 800px) {
+  .three_test {
     position: relative;
     display: flex;
     justify-content: center;
     gap: 10%;
     padding-top: 0.3%;
-}
+  }
 
-.three_icons_text {
+  .three_icons_text {
     display: flex;
     justify-content: center;
     padding: 2% 5% 0 2%;
     gap: 8%;
     text-align: center;
+  }
+
+  .icon_size {
+    width: 100px;
+    height: 100px;
+  }
+
+  .citat {
+    text-align: center;
+    padding: 0 20% 5% 20%;
+  }
+
+  .grid_laes_mere {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+  }
+
+  .om_helse_centret {
+    margin: 5% 15% 0 15%;
+  }
+
+  .om_helse_tekst {
+    margin: 5% 5% 5% 0;
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+  }
+
+  .button_center {
+    padding: 10px 60px;
+    border: 3.5px solid #809671;
+    border-radius: 60px;
+    background-color: transparent;
+    color: #809671;
+    text-decoration: none;
+  }
+  .button_center:hover {
+    color: #594838;
+    background-color: transparent;
+    border: 3.5px solid #594838;
+  }
+
+  .button_nyheder {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .cotainer_mobil {
+    display: none;
+  }
 }
 
-.icon_size {
-  width: 100px;
-  height: 100px;
-}
+@media screen and (max-width: 800px) {
+  .container_web {
+    display: none;
+  }
 
-.citat {
-  text-align: center;
-  padding: 0 20% 5% 20%;
-}
-
-.grid_laes_mere {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 5%;
-}
-
-.om_helse_centret {
-  margin: 5% 15% 0 15%;
-}
-
-.om_helse_tekst {
-  margin: 5% 5% 5% 0;
-}
-
-.icons {
-  width: 50px;
-  height: 50px;
-}
-
-.button_center {
-  padding: 10px 60px;
-  border: 3.5px solid #809671;
-  border-radius: 60px;
-  background-color: transparent;
-  color: #809671;
-  text-decoration: none;
-}
-.button_center:hover {
-  color: #594838;
-  background-color: transparent;
-  border: 3.5px solid #594838;
-}
-
-.button_nyheder {
-  text-align: center;
-  margin-top: 5%;
-}
-
-.cotainer_mobil {
-  display: none;
-}
-
-}
-
-
-@media screen and (max-width: 800px)  {
-
-.container_web {
-  display: none;
-}
-
-.carousel-container_mobil {
+  .carousel-container_mobil {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     text-align: center;
     margin: 5% 0 2% 5%;
     padding-left: 5%;
-}
+  }
 
-.carousel_mobil {
+  .carousel_mobil {
     display: flex;
     overflow: hidden;
     flex: 1;
     gap: 10px;
-}
+  }
 
-.carousel-slide_mobil {
-    flex: 0 0 20%; 
-}
+  .carousel-slide_mobil {
+    flex: 0 0 20%;
+  }
 
-.nav-arrows_mobil {
-  font-size: 20px;
-  cursor: pointer;
-  color: #809671;
-  margin: 10% 2% 0 0;
-}
+  .nav-arrows_mobil {
+    font-size: 20px;
+    cursor: pointer;
+    color: #809671;
+    margin: 10% 2% 0 0;
+  }
 
-.next-arrow_mobil {
-font-size: 25px;
-}
+  .next-arrow_mobil {
+    font-size: 25px;
+  }
 
-.text_iconer {
-text-align: center;
-}
-
+  .text_iconer {
+    text-align: center;
+  }
 }
