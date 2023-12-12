@@ -193,12 +193,13 @@ main {
     left: 50%; */
   color: #809671;
   /* text-align: center; */
-  margin-bottom: 10px;
 }
 
 h1 {
   font-size: 3cqw;
 }
+
+/* Hero button */
 
 .button_center {
   padding: 10px 60px;
@@ -207,11 +208,25 @@ h1 {
   background-color: transparent;
   color: #809671;
   text-decoration: none;
+  font-family: "Source Sans 3", "Calibri";
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 .button_center:hover {
   color: #594838;
   background-color: transparent;
   border: 3.5px solid #594838;
+}
+@media screen and (min-width: 800px) {
+  .button_hero {
+    display: grid;
+    place-content: center;
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+.button_hero {
+  margin: 10% 51%;
 }
 
 /********************************** three icons *********************/
@@ -252,21 +267,6 @@ h1 {
   height: 40px;
 }
 
-.button_center {
-  padding: 3px 20px;
-  border: 2px solid #809671;
-  border-radius: 60px;
-  background-color: transparent;
-  color: #809671;
-  text-decoration: none;
-  
-}
-.button_center:hover {
-  color: #594838;
-  background-color: transparent;
-  border: 3.5px solid #594838;
-}
-
 /********************************************* karousel ****************************************************/
 
 h5 {
@@ -286,7 +286,6 @@ h6 {
   object-fit: cover;
 }
 
-<<<<<<< HEAD
 .carousel-container {
   display: flex;
   flex-direction: row;
@@ -317,13 +316,11 @@ h6 {
 .next-arrow {
   font-size: 25px;
 }
-=======
->>>>>>> f80998b7600c7e5eff06e0e899965ef19439ff23
 
 /********************************************* karousel end ****************************************************/
 
 .button_nyheder {
-  text-align: center;
+  margin: 11% 20%;
 }
 
 .citat {
@@ -413,41 +410,16 @@ h6 {
     width: 50px;
     height: 50px;
   }
-
-<<<<<<< HEAD
-  .button_center {
-    padding: 10px 60px;
-    border: 3.5px solid #809671;
-    border-radius: 60px;
-    background-color: transparent;
-    color: #809671;
-    text-decoration: none;
-  }
-  .button_center:hover {
-    color: #594838;
-    background-color: transparent;
-    border: 3.5px solid #594838;
-  }
-
   .button_nyheder {
-    text-align: center;
-    margin-top: 5%;
+    display: grid;
+    place-content: center;
   }
-=======
-.button_nyheder {
-  text-align: center;
-  margin-top: 5%;
-}
 }
 
-
-@media screen and (max-width: 800px)  {
-
-
-.text_iconer {
-text-align: center;
-}
->>>>>>> f80998b7600c7e5eff06e0e899965ef19439ff23
+@media screen and (max-width: 800px) {
+  .text_iconer {
+    text-align: center;
+  }
 
   .cotainer_mobil {
     display: none;
@@ -458,41 +430,33 @@ text-align: center;
   .container_web {
     display: none;
   }
-
-<<<<<<< HEAD
-  .carousel-container_mobil {
-=======
-/*************************************************** carousel media ***********************************************/
-
-@media screen and (min-width: 800px)  {
-
-.carousel_mobil {
-  display: none;
 }
 
-.carousel-container{
->>>>>>> f80998b7600c7e5eff06e0e899965ef19439ff23
+/*************************************************** carousel media ***********************************************/
+
+@media screen (min-width: 800px) {
+  .carousel_mobil {
+    display: none;
+  }
+
+  .carousel-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-<<<<<<< HEAD
     margin: 5% 0 2% 5%;
     padding-left: 5%;
   }
 
   .carousel_mobil {
-=======
     margin: 5%;
-}
+  }
 
-.carousel{
->>>>>>> f80998b7600c7e5eff06e0e899965ef19439ff23
+  .carousel {
     display: flex;
     overflow: hidden;
     flex: 1;
     gap: 10px;
-<<<<<<< HEAD
   }
 
   .carousel-slide_mobil {
@@ -513,55 +477,48 @@ text-align: center;
   .text_iconer {
     text-align: center;
   }
-=======
+
+  .nav-arrows {
+    font-size: 20px;
+    cursor: pointer;
+    color: #809671;
+    margin: 10% 2% 0 0;
+  }
+
+  .next-arrow {
+    font-size: 25px;
+  }
 }
 
-.nav-arrows{
-  font-size: 20px;
-  cursor: pointer;
-  color: #809671;
-  margin: 10% 2% 0 0;
-}
-
-.next-arrow{
-font-size: 25px;
-}
-}
-
-
-@media screen and (max-width: 800px)  {
-
+@media screen and (max-width: 800px) {
   .carousel_web {
     display: none;
   }
 
-.carousel-container_mobil {
+  .carousel-container_mobil {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     text-align: center;
     margin: 5% 2% 5% 2%;
     /* padding-left: 5%; */
-}
+  }
 
-.carousel_mobil {
+  .carousel_mobil {
     display: flex;
     overflow: hidden;
     flex: 1;
     gap: 5px;
->>>>>>> f80998b7600c7e5eff06e0e899965ef19439ff23
-}
+  }
 
-.nav-arrows_mobil {
-  font-size: 15px;
-  cursor: pointer;
-  color: #809671;
-  margin: 25% 0 0 0;
-}
+  .nav-arrows_mobil {
+    font-size: 15px;
+    cursor: pointer;
+    color: #809671;
+    margin: 25% 0 0 0;
+  }
 
-.next-arrow_mobil {
-font-size: 20px;
+  .next-arrow_mobil {
+    font-size: 20px;
+  }
 }
-
-}
-
