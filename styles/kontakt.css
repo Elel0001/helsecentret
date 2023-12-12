@@ -5,6 +5,10 @@ body {
 /******** Mobil *******/
 
 @media (max-width: 800px) {
+  main {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
   /******** Fonte og tekster *******/
   .tider_tekst h6 {
     font-family: "Lora", "Calibri";
@@ -68,6 +72,34 @@ body {
     border: 3.5px solid #594838;
   }
   /******** End Kontaktformular *******/
+  /********************************** Kontaktikoner *********************/
+  .three_icons {
+    position: relative;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .three_icons_række {
+    margin-top: 1.5rem;
+  }
+
+  .ikon {
+    width: 60px;
+    height: 60px;
+  }
+  /********************************** end Kontaktikoner *********************/
+  /********************************** end Kontaktikoner *********************/
+  .icons {
+    width: 50px;
+    height: 50px;
+  }
+  .flex_facebook_insta {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /******** End Mobil *******/

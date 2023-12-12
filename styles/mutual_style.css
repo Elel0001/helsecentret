@@ -8,6 +8,7 @@ h1 {
   /* Tekst på heroimage */
   font-family: "Lora", "Calibri";
   font-size: 3rem;
+  font-weight: 200;
 }
 
 h2 {
@@ -170,7 +171,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .menu_log_ind {
     display: none;
   }
