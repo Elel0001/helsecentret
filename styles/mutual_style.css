@@ -217,6 +217,15 @@ nav {
 }
 /****************** menu end *******************/
 
+/****************** Footer start *******************/
+/* Footer line */
+.footer_linje {
+  border-top-style: solid;
+  border-color: #594838;
+  border-top-width: 1px;
+  padding-top: 30px;
+}
+
 /* Footer styling - HUSK AT KOPIERE IND I JERES HTML */
 .footer_menu {
   display: flex;
@@ -270,3 +279,4 @@ nav {
 footer {
   background-color: #d2d0b7;
 }
+/****************** Footer end *******************/
