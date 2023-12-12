@@ -61,6 +61,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 5px;
+    margin-right: 0.8%;
   }
   .grid_galleri {
     display: grid;
