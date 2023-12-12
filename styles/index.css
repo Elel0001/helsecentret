@@ -112,6 +112,7 @@ h1 {
 }
 
 /********************************************* karousel ****************************************************/
+
 h5 {
   font-family: "Source Sans 3", "Calibri";
   font-size: 1.3rem;
@@ -190,7 +191,7 @@ font-size: 25px;
 }
 
 .om_helse_tekst {
-  margin: 5%;
+  margin: 5% 5% 5% 0;
 }
 
 .button_laes_mere {
@@ -211,7 +212,9 @@ margin-top: 10%;
 .three_icons_text {
     display: flex;
     justify-content: center;
-
+    padding: 2% 5% 0 5%;
+    gap: 8%;
+    text-align: center;
 }
 
 .icon_size {
@@ -251,7 +254,7 @@ margin-top: 10%;
 }
 
 .om_helse_tekst {
-  margin: 5%;
+  margin: 5% 5% 5% 0;
 }
 
 .icons {
@@ -278,5 +281,48 @@ margin-top: 10%;
   margin-top: 5%;
 }
 
+.cotainer_mobil {
+  display: none;
 }
 
+}
+
+
+@media screen and (max-width: 800px)  {
+
+.container_web {
+  display: none;
+}
+
+.carousel-container_mobil {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    text-align: center;
+    margin: 5% 0 2% 5%;
+    padding-left: 5%;
+}
+
+.carousel_mobil {
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+    gap: 10px;
+}
+
+.carousel-slide_mobil {
+    flex: 0 0 20%; 
+}
+
+.nav-arrows_mobil {
+  font-size: 20px;
+  cursor: pointer;
+  color: #809671;
+  margin: 10% 2% 0 0;
+}
+
+.next-arrow_mobil {
+font-size: 25px;
+}
+
+}
