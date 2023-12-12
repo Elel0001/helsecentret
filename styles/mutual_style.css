@@ -29,7 +29,7 @@ h4 {
   font-family: "Lora", "Calibri";
   font-style: italic;
   font-weight: 200;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: #809671;
 }
 
@@ -58,7 +58,7 @@ body {
 
 /****************** menu eksempel fra undervisning + ændringer *******************/
 
-header {
+.underside_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,7 +90,7 @@ header {
   margin-left: 20px;
 }
 
-nav {
+.underside_nav {
   display: flex;
   align-items: center;
 }
@@ -196,7 +196,7 @@ nav {
     transition: 0.2s linear;
   }
 
-  nav.active .menu {
+  .underside_nav.active .menu {
     display: block;
     background-color: rgba(243, 235, 224, 1);
     position: absolute;
@@ -207,11 +207,11 @@ nav {
     z-index: 1;
   }
 
-  nav.active .menu li {
+  .underside_nav.active .menu li {
     margin: 10px 20px;
   }
 
-  nav.active .menu a {
+  .underside_nav.active .menu a {
     font-size: 20px;
   }
 }
@@ -278,5 +278,72 @@ nav {
 
 footer {
   background-color: #d2d0b7;
+}
+
+/* TIL MOBILVERSION */
+
+@media screen and (max-width: 1100px) {
+  .footer_linje {
+    border-top-style: solid;
+    border-color: #594838;
+    border-top-width: 1px;
+    padding-top: 30px;
+  }
+
+  /* Footer styling - HUSK AT KOPIERE IND I JERES HTML */
+  .footer_menu {
+    display: grid;
+    justify-content: space-between;
+    padding: 8% 8%;
+    gap: 5%;
+  }
+
+  /* pil foran tekst er indsat ved hjælp af chatGPT */
+  .pil_container {
+    display: flex;
+    align-items: center;
+  }
+
+  .arrow {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #594838;
+    vertical-align: middle;
+    line-height: 1;
+  }
+
+  /* ----------- */
+
+  .footer_linje2 {
+    display: grid;
+    justify-content: space-between;
+    padding: 0% 8%;
+  }
+
+  /* Vertical line lavet ved hjælp af ChaptGPT */
+  .vertical_line {
+    border-left: 2px solid #809671;
+    height: 30px;
+    display: none;
+  }
+
+  .footer_linje3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+  }
+
+  .smiley {
+    width: 25px;
+    height: 25px;
+  }
+  .betalingsikoner {
+    width: 60%;
+    padding-bottom: 5%;
+  }
+
+  footer {
+    background-color: #d2d0b7;
+  }
 }
 /****************** Footer end *******************/

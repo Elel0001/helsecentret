@@ -1,6 +1,7 @@
 img {
   width: 100%;
   height: auto;
+  /* nedenstående er sat på respektive billeder eller steder det skal være */
   /* display: block; */
   /* object-fit: cover;
   align-self: stretch; */
@@ -19,8 +20,8 @@ img {
 }
 
 .tekst {
-  padding-top: 20px;
-  padding-right: 10px;
+  padding-top: 3%;
+  padding-right: 8%;
 }
 
 .p_tekst {
@@ -29,14 +30,15 @@ img {
   padding-right: 10px;
 }
 
-/* .horisontal_linje {
+.horisontal_linje {
   border-bottom-style: solid;
   border-color: #594838;
   border-bottom-width: 1px;
-} */
+  padding-top: 5%;
+}
 
 .citat {
-  padding: 20px 30px;
+  padding: 8% 5%;
   text-align: center;
 }
 
@@ -49,7 +51,11 @@ img {
 .video {
   width: 100%;
   height: auto;
-  aspect-ratio: 16/9;
+  aspect-ratio: 1920/750;
+}
+
+.om_sheilla {
+  padding: 4% 0%;
 }
 
 /* ikoner */
@@ -69,7 +75,7 @@ img {
 
 @media (min-width: 800px) {
   section {
-    padding-top: 60px;
+    padding-top: 4.5%;
   }
 
   /* om butikken */
@@ -82,13 +88,14 @@ img {
   }
 
   .tekst {
-    max-width: 65ch;
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 5%;
+    padding-bottom: ;
+    min-width: 75ch;
   }
 
   .p_tekst {
     padding-bottom: 15px;
+    max-width: 65ch;
   }
 
   .galleri_grid {
@@ -134,8 +141,9 @@ img {
   }
 
   .citat {
-    padding: 50px 33%;
+    padding: 4% 25%;
     text-align: center;
+    padding-bottom: 4%;
   }
 
   /* om Sheilla */
