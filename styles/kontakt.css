@@ -1,6 +1,79 @@
 body {
   background-color: #f3ebe0;
 }
+
+/******** Mobil *******/
+
+@media (max-width: 800px) {
+  /******** Fonte og tekster *******/
+  .tider_tekst h6 {
+    font-family: "Lora", "Calibri";
+    color: #809671;
+    font-weight: 100;
+  }
+  h3 {
+    font-weight: 100;
+  }
+  label {
+    font-family: "Source Sans 3", "Calibri";
+    color: #809671;
+    font-weight: 800;
+  }
+  h2 {
+    font-family: "Lora", serif;
+  }
+  .kontakt_info {
+    font-family: "Source Sans 3", "Calibri";
+    color: #809671;
+    font-weight: 100;
+  }
+  textarea {
+    font-family: "Source Sans 3", "Calibri";
+    color: #809671;
+    font-weight: 100;
+  }
+  /******** End fonte og tekster *******/
+  /******** Kontaktformular *******/
+  input {
+    background-color: #f3ebe0;
+    width: 100%;
+    border-color: #594838;
+    border-radius: 15px;
+    border-width: 0.5px;
+  }
+  textarea {
+    background-color: #f3ebe0;
+    width: 100%;
+    resize: none;
+    border-color: #594838;
+    border-radius: 15px;
+    border-width: 0.5px;
+    padding: 0.5rem;
+  }
+  button {
+    padding: 10px 60px;
+    border: 3.5px solid #809671;
+    border-radius: 60px;
+    background-color: transparent;
+    color: #809671;
+    text-decoration: none;
+    font-family: "Source Sans 3", "Calibri";
+    font-size: 1.1rem;
+    color: #809671;
+    font-weight: 800;
+  }
+  button:hover {
+    color: #594838;
+    background-color: transparent;
+    border: 3.5px solid #594838;
+  }
+  /******** End Kontaktformular *******/
+}
+
+/******** End Mobil *******/
+
+/******** Web *******/
+
 @media (min-width: 800px) {
   /********grid og positioner i grid (margin osv)*******/
   #grid_1_1 {
@@ -132,3 +205,5 @@ body {
     margin-bottom: 2rem;
   }
 }
+
+/******** End Web *******/
