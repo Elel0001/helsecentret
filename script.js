@@ -63,39 +63,39 @@ showSlides();
 
 //******************* */ carousel med hjælp af ChatGPT
 
-const carouselMobil = document.querySelector('.carousel_mobil');
-const slidesMobil = document.querySelectorAll('.carousel-slide_mobil');
-const prevArrowMobil = document.querySelector('.prev-arrow_mobil');
-const nextArrowMobil = document.querySelector('.next-arrow_mobil');
-let currentIndexM = 0;
+// const carouselMobil = document.querySelector('.carousel_mobil');
+// const slidesMobil = document.querySelectorAll('.carousel-slide_mobil');
+// const prevArrowMobil = document.querySelector('.prev-arrow_mobil');
+// const nextArrowMobil = document.querySelector('.next-arrow_mobil');
+// let currentIndexM = 0;
 
-function showSlidesMobil() {
-    slidesMobil.forEach((slide, i) => {
-        const isVisible = i >= currentIndexM && i < currentIndexM + 2; // Show four slides at a time and hide the rest
-        slide.style.display = isVisible ? 'block' : 'none';
-    });
-}
+// function showSlidesMobil() {
+//     slidesMobil.forEach((slide, i) => {
+//         const isVisible = i >= currentIndexM && i < currentIndexM + 2; // Show four slides at a time and hide the rest
+//         slide.style.display = isVisible ? 'block' : 'none';
+//     });
+// }
 
-function nextSlide() {
-    currentIndexM += 2; // Increment by 4 to show four slides
-    if( currentIndexM >= slidesMobil.length)
-      currentIndexM = 0;
-    console.log("Cur. indexM: " + currentIndexM + " Last indexM: " + (slidesMobil.length-1));      
-    showSlidesMobil();
-}
+// function nextSlide() {
+//     currentIndexM += 2; // Increment by 4 to show four slides
+//     if( currentIndexM >= slidesMobil.length)
+//       currentIndexM = 0;
+//     console.log("Cur. indexM: " + currentIndexM + " Last indexM: " + (slidesMobil.length-1));      
+//     showSlidesMobil();
+// }
 
-function prevSlide() {
-    currentIndexM -= 2; // Decrement by 4 to show four slides
-    if( currentIndexM < 0)
-      currentIndexM = Math.floor((slidesMobil.length-1) / 2) * 2; // show last page
-    console.log("Cur. indexM: " + currentIndexM + " Last indexM: " + (slides.length-1));      
-    showSlidesMobil();
-}
+// function prevSlide() {
+//     currentIndexM -= 2; // Decrement by 4 to show four slides
+//     if( currentIndexM < 0)
+//       currentIndexM = Math.floor((slidesMobil.length-1) / 2) * 2; // show last page
+//     console.log("Cur. indexM: " + currentIndexM + " Last indexM: " + (slides.length-1));      
+//     showSlidesMobil();
+// }
 
-nextArrowMobil.addEventListener('click', nextSlide);
-prevArrowMobil.addEventListener('click', prevSlide);
+// nextArrowMobil.addEventListener('click', nextSlide);
+// prevArrowMobil.addEventListener('click', prevSlide);
 
-// Show the initial slides
-showSlides();
+// // Show the initial slides
+// showSlides();
 
 //****************************** */ carousel end
