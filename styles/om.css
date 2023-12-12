@@ -1,7 +1,7 @@
 img {
   width: 100%;
   height: auto;
-  /* nedenstående er sat på respektive billeder eller steder det skal bruges */
+  /* nedenstående er sat på respektive billeder eller steder det skal være */
   /* display: block; */
   /* object-fit: cover;
   align-self: stretch; */
@@ -52,6 +52,10 @@ img {
   width: 100%;
   height: auto;
   aspect-ratio: 1920/750;
+}
+
+.om_sheilla {
+  padding: 4% 0%;
 }
 
 /* ikoner */
@@ -137,7 +141,7 @@ img {
   }
 
   .citat {
-    padding: 4% 33%;
+    padding: 4% 25%;
     text-align: center;
     padding-bottom: 4%;
   }
