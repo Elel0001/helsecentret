@@ -220,9 +220,8 @@ nav {
 /* Footer styling - HUSK AT KOPIERE IND I JERES HTML */
 .footer_menu {
   display: flex;
-  justify-content: center;
   justify-content: space-between;
-  padding: 70px 350px;
+  padding: 5% 15%;
 }
 
 /* pil foran tekst er indsat ved hjælp af chatGPT */
@@ -243,9 +242,8 @@ nav {
 
 .footer_linje2 {
   display: flex;
-  justify-content: center;
   justify-content: space-between;
-  padding: 0px 600px;
+  padding: 0% 30%;
   padding-bottom: 20px;
 }
 
