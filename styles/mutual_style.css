@@ -58,7 +58,7 @@ body {
 
 /****************** menu eksempel fra undervisning + ændringer *******************/
 
-header {
+.underside_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,7 +90,7 @@ header {
   margin-left: 20px;
 }
 
-nav {
+.underside_nav {
   display: flex;
   align-items: center;
 }
@@ -196,7 +196,7 @@ nav {
     transition: 0.2s linear;
   }
 
-  nav.active .menu {
+  .underside_nav.active .menu {
     display: block;
     background-color: rgba(243, 235, 224, 1);
     position: absolute;
@@ -207,11 +207,11 @@ nav {
     z-index: 1;
   }
 
-  nav.active .menu li {
+  .underside_nav.active .menu li {
     margin: 10px 20px;
   }
 
-  nav.active .menu a {
+  .underside_nav.active .menu a {
     font-size: 20px;
   }
 }
