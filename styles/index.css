@@ -92,7 +92,7 @@ nav {
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
-  font-size: 1cqw;
+  font-size: 16px;
 }
 
 #menu_forside a:hover {
@@ -105,6 +105,7 @@ nav {
 }
 
 #burger_forside {
+  display: none;
   width: 30px;
   height: 20px;
   cursor: pointer;
@@ -117,9 +118,7 @@ nav {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
-#burger_forside {
-  display: none;
-}
+
 
 @media screen and (max-width: 800px) {
   #menu_log_ind_forside {
@@ -147,7 +146,7 @@ nav {
     transition: 0.2s linear;
   }
 
-  nav.active .menu {
+  #forside_nav.active #menu_forside {
     display: block;
     background-color: rgba(243, 235, 224, 1);
     position: absolute;
@@ -158,11 +157,11 @@ nav {
     z-index: 1;
   }
 
-  nav.active .menu li {
+  #forside_nav.active #menu_forside li {
     margin: 10px 20px;
   }
 
-  nav.active .menu a {
+  #forside_nav.active #menu_forside a {
     font-size: 20px;
   }
 }

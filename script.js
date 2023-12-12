@@ -1,17 +1,19 @@
 // ************************ menu eksempel fra undervisning  *********************
 
-const burger = document.querySelector(".burger");
-const nav = document.querySelector(".underside_nav");
-const menu = document.querySelector(".menu");
-const links = document.querySelectorAll(".menu li a");
+const burger = document.querySelector("#burger_forside, .burger");
+const nav = document.querySelector("#forside_nav, .underside_nav");
+const menu = document.querySelector("#menu_forside, .menu");
+const links = document.querySelectorAll("#menu_forside li a, .menu li a");
 
 burger.addEventListener("click", () => {
+  console.log("Burger clicked!");
   burger.classList.toggle("active");
   nav.classList.toggle("active");
 });
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
+    console.log("Link clicked!");
     burger.classList.remove("active");
     nav.classList.remove("active");
   });
