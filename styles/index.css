@@ -285,6 +285,7 @@ h6 {
   object-fit: cover;
 }
 
+<<<<<<< HEAD
 .carousel-container {
   display: flex;
   flex-direction: row;
@@ -315,6 +316,8 @@ h6 {
 .next-arrow {
   font-size: 25px;
 }
+=======
+>>>>>>> f80998b7600c7e5eff06e0e899965ef19439ff23
 
 /********************************************* karousel end ****************************************************/
 
@@ -410,6 +413,7 @@ h6 {
     height: 50px;
   }
 
+<<<<<<< HEAD
   .button_center {
     padding: 10px 60px;
     border: 3.5px solid #809671;
@@ -428,6 +432,21 @@ h6 {
     text-align: center;
     margin-top: 5%;
   }
+=======
+.button_nyheder {
+  text-align: center;
+  margin-top: 5%;
+}
+}
+
+
+@media screen and (max-width: 800px)  {
+
+
+.text_iconer {
+text-align: center;
+}
+>>>>>>> f80998b7600c7e5eff06e0e899965ef19439ff23
 
   .cotainer_mobil {
     display: none;
@@ -439,20 +458,40 @@ h6 {
     display: none;
   }
 
+<<<<<<< HEAD
   .carousel-container_mobil {
+=======
+/*************************************************** carousel media ***********************************************/
+
+@media screen and (min-width: 800px)  {
+
+.carousel_mobil {
+  display: none;
+}
+
+.carousel-container{
+>>>>>>> f80998b7600c7e5eff06e0e899965ef19439ff23
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
+<<<<<<< HEAD
     margin: 5% 0 2% 5%;
     padding-left: 5%;
   }
 
   .carousel_mobil {
+=======
+    margin: 5%;
+}
+
+.carousel{
+>>>>>>> f80998b7600c7e5eff06e0e899965ef19439ff23
     display: flex;
     overflow: hidden;
     flex: 1;
     gap: 10px;
+<<<<<<< HEAD
   }
 
   .carousel-slide_mobil {
@@ -473,4 +512,55 @@ h6 {
   .text_iconer {
     text-align: center;
   }
+=======
 }
+
+.nav-arrows{
+  font-size: 20px;
+  cursor: pointer;
+  color: #809671;
+  margin: 10% 2% 0 0;
+}
+
+.next-arrow{
+font-size: 25px;
+}
+}
+
+
+@media screen and (max-width: 800px)  {
+
+  .carousel_web {
+    display: none;
+  }
+
+.carousel-container_mobil {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    text-align: center;
+    margin: 5% 2% 5% 2%;
+    /* padding-left: 5%; */
+}
+
+.carousel_mobil {
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+    gap: 5px;
+>>>>>>> f80998b7600c7e5eff06e0e899965ef19439ff23
+}
+
+.nav-arrows_mobil {
+  font-size: 15px;
+  cursor: pointer;
+  color: #809671;
+  margin: 25% 0 0 0;
+}
+
+.next-arrow_mobil {
+font-size: 20px;
+}
+
+}
+
