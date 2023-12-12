@@ -256,14 +256,15 @@ nav {
 .footer_linje3 {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  padding: 0px 600px;
-  padding-bottom: 20px;
 }
 
-.betalingsikoner {
+.smiley {
   width: 35px;
   height: 35px;
+}
+.betalingsikoner {
+  width: 20%;
+  padding-bottom: 2%;
 }
 
 footer {
