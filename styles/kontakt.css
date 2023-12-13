@@ -5,9 +5,9 @@ body {
 /******** Mobil *******/
 
 @media (max-width: 800px) {
-  main {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+  #grid_1_1 {
+    margin-left: 5%;
+    margin-right: 5%;
   }
   /******** Fonte og tekster *******/
   .tider_tekst h6 {
@@ -44,6 +44,7 @@ body {
     border-color: #594838;
     border-radius: 15px;
     border-width: 0.5px;
+    padding-bottom: 4%;
   }
   textarea {
     background-color: #f3ebe0;
@@ -100,8 +101,33 @@ body {
     margin-top: 5rem;
     margin-bottom: 2rem;
   }
-}
+  /*positioner*/
+  .button_mobil {
+    text-align: center;
+    margin-top: 3%;
+  }
+  h3,
+  .kontakt_form {
+    margin-top: 3%;
+  }
+  .venstre_side {
+    margin-top: 10%;
+    margin-bottom: 115%;
+  }
 
+  .kort {
+    display: block;
+    position: absolute;
+    order: -1;
+    margin-top: 20%;
+  }
+  .forms_linje {
+    margin-bottom: 2%;
+  }
+  p {
+    margin-top: 2%;
+  }
+}
 /******** End Mobil *******/
 
 /******** Web *******/

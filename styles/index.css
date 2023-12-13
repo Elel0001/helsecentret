@@ -525,7 +525,7 @@ h6 {
 @media screen and (max-width: 800px) {
   .grid_hero {
     display: grid;
-    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 0.2fr 1fr;
     grid-template-columns: 1fr;
   }
   .content_button {
@@ -533,11 +533,16 @@ h6 {
     grid-row: 3;
     margin-bottom: 10%;
   }
+  .button_hero {
+    margin-top: 10%;
+  }
   .three_test {
     display: grid;
     grid-template-rows: 0.5fr 0.5fr 0.5fr;
     grid-template-columns: 1fr;
     gap: 7%;
+    margin-top: 5%;
+    margin-bottom: 25%;
   }
   .text_iconer {
     max-width: none;
