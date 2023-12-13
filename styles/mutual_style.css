@@ -1,28 +1,38 @@
+/* Variabler */
+html {
+  --primary_g: #809671;
+  --secondary_b: #594838;
+  --background: #f3ebe0;
+}
+/* Variabler */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+body {
+  background-color: var(--background);
+}
 h1 {
   /* Tekst på heroimage */
   font-family: "Lora", "Calibri";
-  font-size: 3rem;
-  font-weight: 200;
+  font-size: 2.6rem;
+  font-weight: 100;
+  font-style: italic;
 }
 
 h2 {
   /* Brun overskrift */
   font-family: "Lora", "Calibri";
   font-size: 2rem;
-  color: #594838;
+  color: var(--secondary_b);
 }
 
 h3 {
   /* Grøn overskrift */
   font-family: "Lora", "Calibri";
   font-size: 2rem;
-  color: #809671;
+  color: var(--primary_g);
 }
 
 h4 {
@@ -31,29 +41,77 @@ h4 {
   font-style: italic;
   font-weight: 200;
   font-size: 1.7rem;
-  color: #809671;
+  color: var(--primary_g);
 }
 
 h5 {
   font-family: "Source Sans 3", "Calibri";
   font-size: 1.3rem;
-  color: #594838;
+  color: var(--secondary_b);
 }
 h6 {
   font-family: "Source Sans 3", "Calibri";
   font-size: 1.2rem;
-  color: #809671;
+  color: var(--primary_g);
 }
 
 p {
   font-family: "Source Sans 3", "Calibri";
   font-size: 1.1rem;
-  color: #594838;
+  color: var(--secondary_b);
 }
 
-body {
-  background-color: #f3ebe0;
+/****************** mobilversion tekster og farver *******************/
+@media screen and (max-width: 800px) {
+  h1 {
+    /* Tekst på heroimage */
+    font-family: "Lora", "Calibri";
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  h2 {
+    /* Brun overskrift */
+    font-family: "Lora", "Calibri";
+    font-size: 1.7rem;
+    color: var(--secondary_b);
+  }
+
+  h3 {
+    /* Grøn overskrift */
+    font-family: "Lora", "Calibri";
+    font-size: 1.7rem;
+    color: var(--primary_g);
+  }
+
+  h4 {
+    /* Citat tekster */
+    font-family: "Lora", "Calibri";
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.4rem;
+    color: var(--primary_g);
+  }
+
+  h5 {
+    font-family: "Source Sans 3", "Calibri";
+    font-size: 1rem;
+    color: var(--secondary_b);
+  }
+  h6 {
+    font-family: "Source Sans 3", "Calibri";
+    font-size: 1rem;
+    color: var(--primary_g);
+  }
+
+  p {
+    font-family: "Source Sans 3", "Calibri";
+    font-size: 1rem;
+    color: var(--secondary_b);
+  }
 }
+/****************** mobilversion tekster og farver END *******************/
 
 /* ikoner: uden for @media = 40 x 40px, inde i @media = 50 x 50px + gap: 10px*/
 
@@ -67,7 +125,7 @@ body {
   background-color: rgba(243, 235, 224, 1);
   position: relative;
   border-bottom-style: solid;
-  border-color: #594838;
+  border-color: var(--secondary_b);
   border-bottom-width: 1px;
 }
 
@@ -82,7 +140,7 @@ body {
 }
 
 .search_text {
-  color: rgba(89, 72, 56, 0.7);
+  color: var(--secondary_b);
 }
 
 .iconer_menu {
@@ -123,7 +181,7 @@ body {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: rgba(89, 72, 56, 1);
+  background-color: var(--secondary_b);
 }
 
 .menu li {
@@ -137,7 +195,7 @@ body {
 .menu a {
   display: block;
   padding: 10px;
-  color: rgba(89, 72, 56, 1);
+  color: var(--secondary_b);
   font-family: "Lora", "Calibri";
   text-decoration: none;
   transition: color 0.3s;
@@ -146,11 +204,11 @@ body {
 }
 
 .menu a:hover {
-  color: rgba(128, 150, 113, 1);
+  color: var(--primary_g);
 }
 
 .iconer_menu:hover {
-  color: rgba(128, 150, 113, 1);
+  color: var(--primary_g);
   cursor: pointer;
 }
 
@@ -163,7 +221,7 @@ body {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: rgba(128, 150, 113, 1);
+  background-color: var(--primary_g);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -222,7 +280,7 @@ body {
 /* Footer line */
 .footer_linje {
   border-top-style: solid;
-  border-color: #594838;
+  border-color: var(--secondary_b);
   border-top-width: 1px;
   padding-top: 30px;
 }
@@ -243,7 +301,7 @@ body {
 .arrow {
   font-size: 30px;
   margin-right: 10px;
-  color: #594838;
+  color: var(--secondary_b);
   vertical-align: middle;
   line-height: 1;
 }
@@ -259,7 +317,7 @@ body {
 
 /* Vertical line lavet ved hjælp af ChaptGPT */
 .vertical_line {
-  border-left: 2px solid #809671;
+  border-left: 2px solid var(--primary_g);
   height: 30px;
 }
 
@@ -286,7 +344,7 @@ footer {
 @media screen and (max-width: 1100px) {
   .footer_linje {
     border-top-style: solid;
-    border-color: #594838;
+    border-color: var(--secondary_b);
     border-top-width: 1px;
     padding-top: 30px;
   }
@@ -308,7 +366,7 @@ footer {
   .arrow {
     font-size: 30px;
     margin-right: 10px;
-    color: #594838;
+    color: var(--secondary_b);
     vertical-align: middle;
     line-height: 1;
   }
@@ -323,7 +381,7 @@ footer {
 
   /* Vertical line lavet ved hjælp af ChaptGPT */
   .vertical_line {
-    border-left: 2px solid #809671;
+    border-left: 2px solid var(--primary_g);
     height: 30px;
     display: none;
   }

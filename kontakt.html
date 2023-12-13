@@ -59,33 +59,34 @@
                     velkommen til at komme forbi butikken.</p>
                 <!-- HUSK netlify og name, hvis det skal bruges-->
                 <form>
-                    <div class="kontakt_form">
+                    <div class="kontakt_form" name="contact" netlify>
                         <div class="forms_linje">
                             <div>
                                 <label for="navn">Navn</label>
                             </div>
-                            <input id="navn" type="text">
+                            <input id="navn" type="text" name="navn">
                         </div>
                         <div class="forms_linje">
                             <div>
                                 <label for="email">Email</label>
                             </div>
-                            <input id="email" type="email">
+                            <input id="email" type="email" name="email">
                         </div>
                         <div class="forms_linje">
                             <div>
                                 <label for="besked">Besked</label>
                             </div>
-                            <textarea id="besked" placeholder="Skriv din besked her..." rows="6"></textarea>
+                            <textarea id="besked" placeholder="Skriv din besked her..." rows="6"
+                                name="besked"></textarea>
                         </div>
-                        <div>
+                        <div class="button_mobil">
                             <button type="submit">Send</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="venstre_side">
-                <img src="img/map_helsecentret.svg" alt="kort over butikkens placering">
+                <img src="img/map_helsecentret.svg" alt="kort over butikkens placering" class="kort">
                 <div class="tider">
                     <h6 id="tider_tekst">Åbningstider</h6>
                     <p>Mandag - fredag (10:00 - 18:00)<br>Lørdag (10:00 - 15:00)</p>

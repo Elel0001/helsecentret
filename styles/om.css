@@ -166,3 +166,28 @@ img {
     height: 50px;
   }
 }
+/* mobil version (amandas ændringer */
+@media (max-width: 800px) {
+  .billede1 {
+    display: none;
+  }
+  .billede2 {
+    display: none;
+  }
+  .billede3 {
+    display: none;
+  }
+  .billede5 {
+    display: none;
+  }
+  .tekst {
+    margin: 3%;
+  }
+  .overskrift,
+  .p_tekst {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 2%;
+  }
+}

@@ -1,8 +1,6 @@
-
-
 body {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   height: auto;
   background-color: rgba(243, 235, 224, 1);
 }
@@ -117,7 +115,6 @@ nav {
   transition: 0.2s linear;
 }
 
-
 @media screen and (max-width: 800px) {
   #menu_log_ind_forside {
     display: none;
@@ -169,30 +166,42 @@ main {
 }
 /****************** menu end *******************/
 
-
+/****************** hero web *******************/
 .grid_hero {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 .hero_image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    grid-column: 1/3;
-    grid-row: 1/4;
-
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  grid-column: 1/3;
+  grid-row: 1/4;
 }
 
 .content_button {
   grid-column: 2/3;
   grid-row: 2/3;
+  align-content: center;
 }
-
 .hero_content {
-    color: #809671; 
-    margin-bottom: 10px; 
+  /*  position: absolute;
+    top: 30%;
+    left: 50%; */
+  color: #809671;
+  font-weight: 100;
+  text-align: center;
 }
+h7 {
+  font-family: "Lora", "Calibri";
+  font-size: 1.7rem;
+  color: #809671;
+  font-weight: 100;
+  margin-top: 10%;
+  font-style: italic;
+}
+/* Hero button */
 
 .button_center {
   padding: 10px 60px;
@@ -201,21 +210,28 @@ main {
   background-color: transparent;
   color: #809671;
   text-decoration: none;
+  font-family: "Source Sans 3", "Calibri";
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 .button_center:hover {
   color: #594838;
   background-color: transparent;
   border: 3.5px solid #594838;
 }
-
+.button_hero {
+  text-align: center;
+  margin-top: 6%;
+}
+/****************** hero web end *******************/
 
 /********************************** three icons *********************/
 .three_icons {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 17%;
-    padding-top: 3%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 17%;
+  padding-top: 3%;
 }
 
 .icon_size {
@@ -224,19 +240,18 @@ main {
 }
 
 .three_icons_text {
-    display: flex;
-    justify-content: center;
-    padding: 4%;
+  display: flex;
+  justify-content: center;
+  padding: 4%;
 }
-
 
 /********************************** three icons end *********************/
 
 .hor_line {
-    border: none;
-    height: 1px; 
-    background-color: rgba(90, 73, 56, 1);
-    margin: 5% 0; 
+  border: none;
+  height: 1px;
+  background-color: rgba(90, 73, 56, 1);
+  margin: 5% 0;
 }
 
 .nyheder_text {
@@ -246,21 +261,6 @@ main {
 .icons {
   width: 40px;
   height: 40px;
-}
-
-
-.button_center {
-  padding: 3px 20px;
-  border: 2px solid #809671;
-  border-radius: 60px;
-  background-color: transparent;
-  color: #809671;
-  text-decoration: none;
-}
-.button_center:hover {
-  color: #594838;
-  background-color: transparent;
-  border: 3.5px solid #594838;
 }
 
 /********************************************* karousel ****************************************************/
@@ -282,11 +282,41 @@ h6 {
   object-fit: cover;
 }
 
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin: 5% 0 2% 5%;
+  padding-left: 5%;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+  gap: 10px;
+}
+
+.carousel-slide {
+  flex: 0 0 20%;
+}
+
+.nav-arrows {
+  font-size: 20px;
+  cursor: pointer;
+  color: #809671;
+  margin: 10% 2% 0 0;
+}
+
+.next-arrow {
+  font-size: 25px;
+}
 
 /********************************************* karousel end ****************************************************/
 
 .button_nyheder {
-  text-align: center;
+  margin-top: 5%;
 }
 
 .citat {
@@ -316,167 +346,234 @@ h6 {
 }
 
 .button_laes_mere {
-text-align: center;
-margin-top: 10%;
+  text-align: center;
+  margin-top: 10%;
 }
 
 .three_test {
   text-align: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 2%;
   margin-top: 1%;
 }
 
 .text_iconer {
   max-width: 32ch;
-
 }
-    
-@media screen and (min-width: 800px)  {
 
-.three_test {
+@media screen and (min-width: 800px) {
+  .three_test {
     position: relative;
     display: flex;
     justify-content: center;
     gap: 10%;
     padding-top: 0.3%;
-}
+  }
 
-.three_icons_text {
+  .three_icons_text {
     display: flex;
     justify-content: center;
     padding: 2% 5% 0 2%;
     gap: 8%;
     text-align: center;
+  }
+
+  .icon_size {
+    width: 100px;
+    height: 100px;
+  }
+
+  .citat {
+    text-align: center;
+    padding: 0 20% 5% 20%;
+  }
+
+  .grid_laes_mere {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+  }
+
+  .om_helse_centret {
+    margin: 5% 15% 0 15%;
+  }
+
+  .om_helse_tekst {
+    margin: 5% 5% 5% 0;
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+  }
+  .button_nyheder {
+    display: grid;
+    place-content: center;
+  }
 }
 
-.icon_size {
-  width: 100px;
-  height: 100px;
+@media screen and (max-width: 800px) {
+  .text_iconer {
+    text-align: center;
+  }
+
+  .cotainer_mobil {
+    display: none;
+  }
 }
 
-.citat {
-  text-align: center;
-  padding: 0 20% 5% 20%;
+@media screen and (max-width: 800px) {
+  .container_web {
+    display: none;
+  }
 }
-
-.grid_laes_mere {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 5%;
-}
-
-.om_helse_centret {
-  margin: 5% 15% 0 15%;
-}
-
-.om_helse_tekst {
-  margin: 5% 5% 5% 0;
-}
-
-.icons {
-  width: 50px;
-  height: 50px;
-}
-
-.button_center {
-  padding: 10px 60px;
-  border: 3.5px solid #809671;
-  border-radius: 60px;
-  background-color: transparent;
-  color: #809671;
-  text-decoration: none;
-}
-.button_center:hover {
-  color: #594838;
-  background-color: transparent;
-  border: 3.5px solid #594838;
-}
-
-.button_nyheder {
-  text-align: center;
-  margin-top: 5%;
-}
-}
-
-
-@media screen and (max-width: 800px)  {
-
-
-.text_iconer {
-text-align: center;
-}
-
-}
-
 
 /*************************************************** carousel media ***********************************************/
 
-@media screen and (min-width: 800px)  {
+@media (min-width: 800px) {
+  .carousel_mobil {
+    display: none;
+  }
 
-.carousel_mobil {
-  display: none;
-}
-
-.carousel-container{
+  .carousel-container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    margin: 5%;
-}
+    margin: 5% 0 2% 5%;
+    padding-left: 5%;
+  }
 
-.carousel{
+  .carousel_mobil {
+    margin: 5%;
+  }
+
+  .carousel {
     display: flex;
     overflow: hidden;
     flex: 1;
     gap: 10px;
+  }
+
+  .carousel-slide_mobil {
+    flex: 0 0 20%;
+  }
+
+  .nav-arrows_mobil {
+    font-size: 20px;
+    cursor: pointer;
+    color: #809671;
+    margin: 10% 2% 0 0;
+  }
+
+  .next-arrow_mobil {
+    font-size: 25px;
+  }
+
+  .text_iconer {
+    text-align: center;
+  }
+
+  .nav-arrows {
+    font-size: 20px;
+    cursor: pointer;
+    color: #809671;
+    margin: 10% 2% 0 0;
+  }
+
+  .next-arrow {
+    font-size: 25px;
+  }
 }
 
-.nav-arrows{
-  font-size: 20px;
-  cursor: pointer;
-  color: #809671;
-  margin: 10% 2% 0 0;
-}
-
-.next-arrow{
-font-size: 25px;
-}
-}
-
-
-@media screen and (max-width: 800px)  {
-
+@media screen and (max-width: 800px) {
   .carousel_web {
     display: none;
   }
 
-.carousel-container_mobil {
+  .carousel-container_mobil {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     text-align: center;
     margin: 5% 2% 5% 2%;
-}
+  }
 
-.carousel_mobil {
+  .carousel_mobil {
     display: flex;
     overflow: hidden;
     flex: 1;
     gap: 5px;
-}
+  }
 
-.nav-arrows_mobil {
-  font-size: 15px;
-  cursor: pointer;
-  color: #809671;
-  margin: 25% 0 0 0;
-}
+  .nav-arrows_mobil {
+    font-size: 15px;
+    cursor: pointer;
+    color: #809671;
+    margin: 25% 0 0 0;
+  }
 
-.next-arrow_mobil {
-font-size: 20px;
+  .next-arrow_mobil {
+    font-size: 20px;
+  }
 }
-
+/***************** mobil version (af Amanda) ************************/
+@media screen and (max-width: 800px) {
+  .grid_hero {
+    display: grid;
+    grid-template-rows: 1fr 0.2fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .content_button {
+    grid-column: 1;
+    grid-row: 3;
+    margin-bottom: 10%;
+  }
+  .button_hero {
+    margin-top: 10%;
+  }
+  .three_test {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+    gap: 7%;
+    margin-top: 5%;
+    margin-bottom: 25%;
+  }
+  .text_iconer {
+    max-width: none;
+  }
+  .hor_line {
+    border: none;
+    height: 1px;
+    background-color: rgba(90, 73, 56, 1);
+    margin: 15% 0;
+  }
+  .button_nyheder {
+    text-align: center;
+  }
+  .citat {
+    margin-bottom: 3%;
+  }
+  .video {
+    margin-bottom: 3%;
+  }
+  .button_laes_mere {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+  h5 {
+    font-family: "Source Sans 3", "Calibri";
+    font-size: 1rem;
+    color: #594838;
+  }
+  h6 {
+    font-family: "Source Sans 3", "Calibri";
+    font-size: 1rem;
+    color: #809671;
+  }
+  h3 {
+    text-align: center;
+  }
 }
-
