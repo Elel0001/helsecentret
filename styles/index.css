@@ -168,6 +168,7 @@ main {
 }
 /****************** menu end *******************/
 
+/****************** hero web *******************/
 .grid_hero {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -187,7 +188,6 @@ main {
   grid-row: 2/3;
   align-content: center;
 }
-
 .hero_content {
   /*  position: absolute;
     top: 30%;
@@ -226,6 +226,7 @@ h7 {
   text-align: center;
   margin-top: 6%;
 }
+/****************** hero web end *******************/
 
 /********************************** three icons *********************/
 .three_icons {
@@ -518,5 +519,60 @@ h6 {
 
   .next-arrow_mobil {
     font-size: 20px;
+  }
+}
+/***************** mobil version (af Amanda) ************************/
+@media screen and (max-width: 800px) {
+  .grid_hero {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .content_button {
+    grid-column: 1;
+    grid-row: 3;
+    margin-bottom: 10%;
+  }
+  .three_test {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+    gap: 7%;
+  }
+  .text_iconer {
+    max-width: none;
+  }
+  .hor_line {
+    border: none;
+    height: 1px;
+    background-color: rgba(90, 73, 56, 1);
+    margin: 15% 0;
+  }
+  .button_nyheder {
+    text-align: center;
+  }
+  .citat {
+    margin-bottom: 3%;
+  }
+  .video {
+    margin-bottom: 3%;
+  }
+  .button_laes_mere {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+  h5 {
+    font-family: "Source Sans 3", "Calibri";
+    font-size: 1rem;
+    color: #594838;
+  }
+  h6 {
+    font-family: "Source Sans 3", "Calibri";
+    font-size: 1rem;
+    color: #809671;
+  }
+  h3 {
+    text-align: center;
   }
 }
