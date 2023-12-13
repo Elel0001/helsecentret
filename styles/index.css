@@ -14,9 +14,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  /* background-color: rgba(243, 235, 224, 1); */
   position: relative;
-  /* border-bottom-style: solid; */
   border-color: #594838;
   border-bottom-width: 1px;
 }
@@ -178,7 +176,6 @@ main {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .hero_image {
-  /* position: relative; */
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -193,18 +190,8 @@ main {
 }
 
 .hero_content {
-   /*  position: absolute;
-    top: 30%;
-    left: 50%; */
     color: #809671; 
-    /* text-align: center; */
-    margin-bottom: 10px;
-   
-}
-
-h1 {
-
-    font-size: 3cqw;
+    margin-bottom: 10px; 
 }
 
 .button_center {
@@ -471,7 +458,6 @@ font-size: 25px;
     align-items: center;
     text-align: center;
     margin: 5% 2% 5% 2%;
-    /* padding-left: 5%; */
 }
 
 .carousel_mobil {

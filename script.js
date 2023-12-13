@@ -1,4 +1,4 @@
-// ************************ menu eksempel fra undervisning + ændringer og hlælp af ChatGPT *********************
+// ************************ menu eksempel fra undervisning + ændringer + hlælp af ChatGPT *********************
 
 const burger = document.querySelector("#burger_forside, .burger");
 const nav = document.querySelector("#forside_nav, .underside_nav");
@@ -21,7 +21,7 @@ links.forEach((link) => {
 
 // ************************ menu end  *********************
 
-//******************* */ carousel med hjælp af ChatGPT
+//******************* */ carousel mobil med hjælp af ChatGPT + ændringer ***************
 
 const carouselMobil = document.querySelector(".carousel_mobil");
 const slidesMobil = document.querySelectorAll(".carousel-slide_mobil");
@@ -31,20 +31,20 @@ let currentIndexMobil = 0;
 
 function showSlidesMobil() {
   slidesMobil.forEach((slide, i) => {
-    const isVisible = i >= currentIndexMobil && i < currentIndexMobil + 2; // Show four slides at a time and hide the rest
+    const isVisible = i >= currentIndexMobil && i < currentIndexMobil + 2; // Show two slides at a time and hide the rest
     slide.style.display = isVisible ? "block" : "none";
   });
 }
 
 function nextSlideMobil() {
-  currentIndexMobil += 2; // Increment by 4 to show four slides
+  currentIndexMobil += 2; // Increment by 2 to show four slides
   if (currentIndexMobil >= slidesMobil.length) currentIndexMobil = 0;
   console.log("Cur. index: " + currentIndexMobil + " Last index: " + (slidesMobil.length - 1));
   showSlidesMobil();
 }
 
 function prevSlideMobil() {
-  currentIndexMobil -= 2; // Decrement by 4 to show four slides
+  currentIndexMobil -= 2; // Decrement by 2 to show four slides
   if (currentIndexMobil < 0) currentIndexMobil = Math.floor((slidesMobil.length - 1) / 2) * 2; // show last page
   console.log("Cur. index: " + currentIndexMobil + " Last index: " + (slidesMobil.length - 1));
   showSlidesMobil();
@@ -56,7 +56,7 @@ prevArrowMobil.addEventListener("click", prevSlideMobil);
 // Show the initial slides
 showSlidesMobil();
 
-//****************************** */ carousel end
+//******************* */ carousel web med hjælp af ChatGPT + ændringer ***************
 
 const carousel = document.querySelector(".carousel");
  const slides = document.querySelectorAll(".carousel-slide");
@@ -91,4 +91,4 @@ const carousel = document.querySelector(".carousel");
 // Show the initial slides
 showSlides();
 
-//****************************** */ carousel end
+//****************************** */ carousel end************************
