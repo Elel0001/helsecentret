@@ -59,24 +59,25 @@
                     velkommen til at komme forbi butikken.</p>
                 <!-- HUSK netlify og name, hvis det skal bruges-->
                 <form>
-                    <div class="kontakt_form">
+                    <div class="kontakt_form" name="contact" netlify>
                         <div class="forms_linje">
                             <div>
                                 <label for="navn">Navn</label>
                             </div>
-                            <input id="navn" type="text">
+                            <input id="navn" type="text" name="navn">
                         </div>
                         <div class="forms_linje">
                             <div>
                                 <label for="email">Email</label>
                             </div>
-                            <input id="email" type="email">
+                            <input id="email" type="email" name="email">
                         </div>
                         <div class="forms_linje">
                             <div>
                                 <label for="besked">Besked</label>
                             </div>
-                            <textarea id="besked" placeholder="Skriv din besked her..." rows="6"></textarea>
+                            <textarea id="besked" placeholder="Skriv din besked her..." rows="6"
+                                name="besked"></textarea>
                         </div>
                         <div class="button_mobil">
                             <button type="submit">Send</button>
